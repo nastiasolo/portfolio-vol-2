@@ -121,7 +121,7 @@
   font-size: 0.9rem;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  color: #0070f3;
+  color: var(--color-accent);
   margin-bottom: 0.5rem;
 }
 
@@ -152,7 +152,6 @@
   font-weight: 600;
 }
 
-/* Кнопки/Ссылки */
 .linksContainer {
   display: flex;
   gap: 1rem;
@@ -170,12 +169,8 @@
 }
 
 .btnLive {
-  background-color: #0070f3;
+  background-color: var(--accent-color);
   color: white;
-}
-
-.btnLive:hover {
-  background-color: #0051a8;
 }
 
 .btnGithub {

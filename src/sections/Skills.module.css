@@ -83,7 +83,7 @@
 
 .skillItem:hover {
   transform: translateY(-4px);
-  border-color: #0070f3;
+  border-color: var(--accent-color);
   box-shadow: 0 6px 16px rgba(0, 112, 243, 0.1);
 }
 
@@ -135,8 +135,8 @@
 
 .langLevel {
   font-size: 0.9rem;
-  color: #0070f3;
-  background: rgba(0, 112, 243, 0.08);
+  color: var(--accent-color);
+  background: rgba(123, 0, 160, 0.08);
   padding: 0.2rem 0.6rem;
   border-radius: 12px;
   font-weight: 500;
@@ -146,7 +146,7 @@
 }
 
 .langItem:hover .langLevel {
-  background-color: #0070f3;
+  background-color: var(--accent-color);
   color: white;
 }
 
@@ -183,13 +183,13 @@
 
 .hobbyItem:hover {
   transform: translateY(-2px);
-  border-color: #0070f3;
+  border-color: var(--accent-color);
   background: var(--bg-card, #ffffff);
   box-shadow: 0 4px 12px rgba(0, 112, 243, 0.05);
 }
 
 .hobbyItem:hover .hobbyIcon {
-  color: #0070f3;
+  color: var(--accent-color);
   transform: scale(1.1);
 }
 
@@ -241,4 +241,10 @@
 }
 .hobbyItem:hover .iconTravel {
   color: #2ecc71;
+}
+.hobbyItem:hover .iconLiterature {
+  color: #9b59b6;
+}
+.hobbyItem:hover .iconBoardGames {
+  color: #fc23d4;
 }

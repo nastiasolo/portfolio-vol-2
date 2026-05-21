@@ -11,8 +11,13 @@ import { DiJavascript1, DiPostgresql } from "react-icons/di";
 import { SiNextdotjs, SiTypescript } from "react-icons/si";
 import { AiOutlineThunderbolt } from "react-icons/ai";
 import { TbApi } from "react-icons/tb";
+import {
+  IoLanguageOutline,
+  IoGameControllerOutline,
+  IoBookOutline,
+} from "react-icons/io5";
+import { FaDiceD20 } from "react-icons/fa";
 
-import { IoGameControllerOutline } from "react-icons/io5";
 import { GrYoga } from "react-icons/gr";
 import { ImCompass } from "react-icons/im";
 import { BsPuzzle } from "react-icons/bs";
@@ -48,6 +53,14 @@ const HOBBIES = [
     icon: <IoGameControllerOutline className={styles.iconGames} />,
   },
   { name: "Travelling", icon: <ImCompass className={styles.iconTravel} /> },
+  {
+    name: "Literature",
+    icon: <IoBookOutline className={styles.iconLiterature} />,
+  },
+  {
+    name: "Board Games",
+    icon: <FaDiceD20 className={styles.iconBoardGames} />,
+  },
 ];
 
 export default function Skills() {

@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import styles from "./Navbar.module.css";
 import { BiTerminal } from "react-icons/bi";
+import ThemeToggle from "./ThemeToggle";
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -39,7 +40,7 @@ export default function Navbar() {
             Contact
           </a>
 
-          <div className={styles.themeTogglePlaceholder}></div>
+          <ThemeToggle />
         </div>
       </div>
     </nav>

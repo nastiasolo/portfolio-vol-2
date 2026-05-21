@@ -1,0 +1,38 @@
+.toggleBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+  color: var(--text-primary);
+  font-size: 1.3rem;
+  transition:
+    background-color 0.2s,
+    transform 0.2s;
+}
+
+.toggleBtn:hover {
+  background-color: var(--bg-tag);
+  transform: scale(1.1);
+}
+
+.iconMoon {
+  color: #f1c40f;
+  animation: spin 0.4s ease-out;
+}
+.iconSun {
+  color: #f39c12;
+  animation: spin 0.4s ease-out;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(-90deg);
+    opacity: 0;
+  }
+  100% {
+    transform: rotate(0);
+    opacity: 1;
+  }
+}
