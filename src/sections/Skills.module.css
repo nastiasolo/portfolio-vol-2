@@ -1,0 +1,244 @@
+.skillsSection {
+  padding: 6rem 2rem;
+  background-color: var(--bg-secondary, #fafafa);
+  transition: background-color 0.3s ease;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.sectionTitle {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  color: var(--text-primary, #333);
+}
+
+.sectionSubtitle {
+  text-align: center;
+  color: var(--text-secondary, #666);
+  margin-bottom: 4rem;
+  font-size: 1.1rem;
+}
+
+.mainCard {
+  background: var(--bg-card, #ffffff);
+  border: 1px solid var(--border-color, #eee);
+  border-radius: 16px;
+  padding: 2.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
+  margin-bottom: 2rem;
+}
+
+.personalGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 2rem;
+}
+
+@media (max-width: 600px) {
+  .personalGrid {
+    grid-template-columns: 1fr;
+  }
+  .mainCard {
+    padding: 1.5rem;
+  }
+}
+
+.personalCard {
+  background: var(--bg-card, #ffffff);
+  border: 1px solid var(--border-color, #eee);
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
+}
+
+.groupTitle {
+  font-size: 1.4rem;
+  margin-bottom: 1.5rem;
+  color: var(--text-primary, #333);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.skillsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+  gap: 1.25rem;
+}
+
+.skillItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 0.5rem;
+  border-radius: 10px;
+  background: var(--bg-secondary, #fdfdfd);
+  border: 1px solid var(--border-color, #f5f5f5);
+  transition: all 0.3s ease;
+}
+
+.skillItem:hover {
+  transform: translateY(-4px);
+  border-color: #0070f3;
+  box-shadow: 0 6px 16px rgba(0, 112, 243, 0.1);
+}
+
+.iconWrapper {
+  font-size: 2.2rem;
+  color: #888;
+  margin-bottom: 0.5rem;
+  transition:
+    color 0.3s,
+    transform 0.3s;
+}
+
+.skillName {
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-align: center;
+  color: var(--text-primary, #333);
+}
+
+.languagesList {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.langItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  background: var(--bg-secondary, #f9f9f9);
+  border-radius: 8px;
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.langItem:hover {
+  transform: translateX(5px);
+  border-color: rgba(0, 112, 243, 0.3);
+  background: var(--bg-card, #ffffff);
+}
+
+.langName {
+  font-weight: 600;
+  color: var(--text-primary, #333);
+}
+
+.langLevel {
+  font-size: 0.9rem;
+  color: #0070f3;
+  background: rgba(0, 112, 243, 0.08);
+  padding: 0.2rem 0.6rem;
+  border-radius: 12px;
+  font-weight: 500;
+  transition:
+    background-color 0.2s,
+    color 0.2s;
+}
+
+.langItem:hover .langLevel {
+  background-color: #0070f3;
+  color: white;
+}
+
+.hobbiesGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.hobbyItem {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.75rem;
+  background: var(--bg-secondary, #f9f9f9);
+  border-radius: 8px;
+  font-weight: 500;
+  color: var(--text-primary, #333);
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.hobbyIcon {
+  font-size: 1.4rem;
+  color: #777;
+  display: flex;
+  align-items: center;
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.hobbyItem:hover {
+  transform: translateY(-2px);
+  border-color: #0070f3;
+  background: var(--bg-card, #ffffff);
+  box-shadow: 0 4px 12px rgba(0, 112, 243, 0.05);
+}
+
+.hobbyItem:hover .hobbyIcon {
+  color: #0070f3;
+  transform: scale(1.1);
+}
+
+.skillItem:hover .iconWrapper {
+  transform: scale(1.05);
+}
+.skillItem:hover .iconHtml {
+  color: #e34c26;
+}
+.skillItem:hover .iconCss {
+  color: #264de4;
+}
+.skillItem:hover .iconJs {
+  color: #f7df1e;
+}
+.skillItem:hover .iconTs {
+  color: #3178c6;
+}
+.skillItem:hover .iconReact {
+  color: #61dafb;
+}
+.skillItem:hover .iconNext {
+  color: #000000;
+}
+.skillItem:hover .iconNode {
+  color: #339933;
+}
+.skillItem:hover .iconPostgres {
+  color: #336791;
+}
+.skillItem:hover .iconApi {
+  color: #00a3a3;
+}
+.skillItem:hover .iconVite {
+  color: #646cff;
+}
+.skillItem:hover .iconGit {
+  color: #f05032;
+}
+
+.hobbyItem:hover .iconYoga {
+  color: #4aa3df;
+}
+.hobbyItem:hover .iconPuzzle {
+  color: #e67e22;
+}
+.hobbyItem:hover .iconGames {
+  color: #e74c3c;
+}
+.hobbyItem:hover .iconTravel {
+  color: #2ecc71;
+}
