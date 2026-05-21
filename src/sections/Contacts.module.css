@@ -1,0 +1,96 @@
+.footer {
+  padding: 5rem 2rem 2rem 2rem;
+  background-color: var(--bg-secondary, #fafafa);
+  border-top: 1px solid var(--border-color, #eee);
+  text-align: center;
+  transition:
+    background-color 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  color: var(--text-primary, #333);
+}
+
+.subtitle {
+  font-size: 1.05rem;
+  color: var(--text-secondary, #666);
+  line-height: 1.6;
+  margin-bottom: 2.5rem;
+}
+
+.socialGrid {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+.iconLink {
+  font-size: 2.2rem;
+  color: var(--text-secondary, #777);
+  transition:
+    transform 0.2s ease,
+    color 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+}
+
+.iconLink:hover {
+  transform: translateY(-5px);
+}
+
+.iconLink[aria-label="GitHub"]:hover {
+  color: #24292e;
+}
+.iconLink[aria-label="LinkedIn"]:hover {
+  color: #0077b5;
+}
+.iconLink[aria-label="Telegram"]:hover {
+  color: #229ed9;
+}
+.iconLink[aria-label="Email"]:hover {
+  color: #ea4335;
+}
+
+.resumeBlock {
+  margin-bottom: 3rem;
+}
+
+.resumeButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  border: 2px solid #0070f3;
+  color: #0070f3;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: all 0.2s ease;
+}
+
+.resumeButton:hover {
+  background-color: #0070f3;
+  color: white;
+  box-shadow: 0 4px 12px rgba(0, 112, 243, 0.2);
+}
+
+.divider {
+  border: 0;
+  height: 1px;
+  background-color: var(--border-color, #eee);
+  margin-bottom: 1.5rem;
+}
+
+.copyright {
+  font-size: 0.85rem;
+  color: var(--text-secondary, #888);
+}
