@@ -17,7 +17,7 @@ export default function Contact() {
 
         <div className={styles.socialGrid}>
           <a
-            href="https://github.com/yourusername"
+            href="https://github.com/nastiasolo"
             target="_blank"
             rel="noopener noreferrer"
             className={styles.iconLink}
@@ -26,7 +26,7 @@ export default function Contact() {
             <FaGithub />
           </a>
           <a
-            href="https://linkedin.com/in/yourusername"
+            href="https://www.linkedin.com/in/a-solodova/"
             target="_blank"
             rel="noopener noreferrer"
             className={styles.iconLink}
@@ -35,7 +35,7 @@ export default function Contact() {
             <FaLinkedin />
           </a>
           <a
-            href="mailto:your.email@example.com"
+            href="mailto:ag.solodova@gmail.com"
             className={styles.iconLink}
             aria-label="Email"
           >
