@@ -28,7 +28,7 @@ body.dark {
 }
 
 body {
-  --accent-color: rgb(123, 0, 160);
+  --accent-color: rgb(70, 3, 125);
   background-color: var(--bg-primary);
   color: var(--text-primary);
   transition:
