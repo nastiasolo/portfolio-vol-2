@@ -22,7 +22,7 @@ export default function ProjectCard({ project }) {
           <h4>Key Features:</h4>
           <ul className={styles.featuresList}>
             {project.features.map((feature, index) => (
-              <li key={index}>{feature}</li>
+              <li key={index}>✔ {feature}</li>
             ))}
           </ul>
         </div>

@@ -1,7 +1,7 @@
 .projectCard {
   background: var(--bg-card, #ffffff);
   border: 1px solid var(--border-color, #eee);
-  border-radius: 16px;
+
   overflow: hidden;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
   display: flex;
@@ -12,14 +12,13 @@
 }
 
 .projectCard:hover {
-  transform: translateY(-8px);
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
 }
 
 .imageWrapper {
   position: relative;
   width: 100%;
-  height: 300px;
+  height: 270px;
   overflow: hidden;
   background-color: #f0f0f0;
 }
@@ -32,7 +31,7 @@
 }
 
 .projectCard:hover .projectImage {
-  transform: scale(1.05);
+  transform: scale(1.03);
 }
 
 .imageOverlay {
