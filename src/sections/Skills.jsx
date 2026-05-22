@@ -11,11 +11,7 @@ import { DiJavascript1, DiPostgresql } from "react-icons/di";
 import { SiNextdotjs, SiTypescript } from "react-icons/si";
 import { AiOutlineThunderbolt } from "react-icons/ai";
 import { TbApi } from "react-icons/tb";
-import {
-  IoLanguageOutline,
-  IoGameControllerOutline,
-  IoBookOutline,
-} from "react-icons/io5";
+import { IoGameControllerOutline, IoBookOutline } from "react-icons/io5";
 import { FaDiceD20 } from "react-icons/fa";
 
 import { GrYoga } from "react-icons/gr";

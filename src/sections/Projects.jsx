@@ -1,67 +1,76 @@
 import styles from "./Projects.module.css";
+import ProjectCard from "../components/ProjectCard";
 
-// import eventAppGif from '../assets/images/event-app.gif';
+import eventAppImg from "../assets/images/event-app.png";
+import spaceGalacticaImg from "../assets/images/space-galactica.png";
+import expenseTrackerImg from "../assets/images/expense-tracker.png";
+import memoryGameImg from "../assets/images/memory-game.png";
 
 const PROJECTS = [
   {
     id: 1,
     title: "Event App",
     description:
-      "A dynamic web application designed for organizing and managing events, scheduling, and community invitations.",
+      "A responsive web application for discovering tech events, workshops, and hackathons, featuring user authentication, an interactive shopping cart, and a personal order history.",
     features: [
-      "Event coordination & scheduling",
-      "Interactive guest invitations",
-      "Real-time updates",
+      "Browse through upcoming tech conferences, hackathons, and workshops.",
+      "Adaptive user interface.",
+      "User registration and login using JWT tokens (handled via context).",
+      "Add tickets, dynamically update quantities, and clear the cart.",
+      "Authenticated users can view their past orders with real-time checkout simulation.",
     ],
-    stack: ["React", "Node.js", "PostgreSQL", "JavaScript"],
-    image: "https://via.placeholder.com/400x250?text=Event+App+Demo", // Заменишь на путь к гифке
-    liveLink: "#",
-    githubLink: "#",
+    stack: ["React", "JavaScript", "Vite", "React Router DOM", "Context API"],
+    image: eventAppImg, // ПЕРЕДАЕМ ПЕРЕМЕННУЮ ТУТ
+    liveLink: "https://event-app-startup-hyf.vercel.app/",
+    githubLink: "https://github.com/nastiasolo/event-app-startup-hyf",
   },
   {
     id: 2,
     title: "Space Galactica",
     description:
-      "An immersive, space-themed frontend project exploring responsive design, cosmic visuals, and interactive elements.",
+      "Galactica is a web application for a fictional space tourism agency that allows users to explore planets, manage a wishlist of dream destinations, and get to know the crew of space explorers.",
     features: [
-      "Stunning space aesthetics",
-      "Fully responsive layouts",
-      "Smooth interactive components",
+      "Next.js's native file-system-based routing (App Router)",
+      "CSS Modules (for component-scoped styling)",
+      "Users can seamlessly add planets to their wishlist, remove them, add custom planets via forms, and track the real-time dynamic countdown of selected destinations.",
+      "A dedicated dashboard layout prepared for tracking outer-space data and rover photograph elements fetched from NASA API.",
     ],
-    stack: ["JavaScript", "HTML5", "CSS Modules", "Vite"],
-    image: "https://via.placeholder.com/400x250?text=Space+Galactica+Demo",
-    liveLink: "#",
-    githubLink: "#",
+    stack: ["Next.js", "JavaScript", "React", "CSS Modules", "Vercel"],
+    image: spaceGalacticaImg, // И ТУТ
+    liveLink: "https://space-galactica-nextjs.vercel.app/",
+    githubLink: "https://github.com/nastiasolo/space-galactica-nextjs",
   },
   {
     id: 3,
     title: "Expense Tracker",
     description:
-      "A smart financial tool to track income and expenses, manage budgets, and visualize personal balance analytics.",
+      "A simple Expense Tracker that lets you log daily spendings, categorize expenses, view monthly total, and track your budget in real time.",
     features: [
-      "Dynamic balance & history calculation",
-      "Category-based transaction filtering",
-      "Local state persistence",
+      "Categorize spendings (Housing, Food, Transport, Entertainment, etc.)",
+      "View total expenses and income for the current month, expenses broken down by category with a visual bar chart.",
+      "LocalStorage to save the data (income and expenses)",
+      "Archive page with monthly expense summaries",
     ],
-    stack: ["React", "TypeScript", "CSS Modules"],
-    image: "https://via.placeholder.com/400x250?text=Expense+Tracker+Demo",
-    liveLink: "#",
-    githubLink: "#",
+    stack: ["HTML", "CSS", "Vanilla JavaScript", "LocalStorage"],
+    image: expenseTrackerImg, // И ТУТ
+    liveLink: "https://nastiasolo.github.io/expense-tracker/",
+    githubLink: "https://github.com/nastiasolo/expense-tracker",
   },
   {
     id: 4,
     title: "Memory Game",
     description:
-      "A classic tile-matching card game designed to test and improve memory skills, built with robust state logic.",
+      "A classic Memory Card Game built with JavaScript, featuring a backend and database for dynamic card data, responsive design, and multiple difficulty levels.",
     features: [
-      "Card flipping & matching logic",
-      "Score and moves tracking",
-      "Game restart and win conditions",
+      "Fullstack Application",
+      "Fully mobile-friendly layout.",
+      "Three Difficulty Levels",
+      "Timer tracks your speed.",
     ],
-    stack: ["React", "JavaScript", "CSS3"],
-    image: "https://via.placeholder.com/400x250?text=Memory+Game+Demo",
-    liveLink: "#",
-    githubLink: "#",
+    stack: ["HTML", "CSS", "JavaScript", "Node.js", "Express", "SQLite"],
+    image: memoryGameImg, // И ТУТ
+    liveLink: "#", // Добавил заглушку, раз у этого проекта нет liveLink в твоем коде
+    githubLink: "https://github.com/nastiasolo/memory-game-fullstack",
   },
 ];
 
@@ -74,61 +83,7 @@ export default function Projects() {
 
         <div className={styles.projectsGrid}>
           {PROJECTS.map((project) => (
-            <div key={project.id} className={styles.projectCard}>
-              <div className={styles.imageWrapper}>
-                <img
-                  src={project.image}
-                  alt={`${project.title} preview`}
-                  className={styles.projectImage}
-                />
-                <div className={styles.imageOverlay}>
-                  <span>Click for details coming soon</span>
-                </div>
-              </div>
-
-              <div className={styles.cardContent}>
-                <h3 className={styles.projectTitle}>{project.title}</h3>
-                <p className={styles.projectDescription}>
-                  {project.description}
-                </p>
-
-                <div className={styles.featuresBlock}>
-                  <h4>Key Features:</h4>
-                  <ul className={styles.featuresList}>
-                    {project.features.map((feature, index) => (
-                      <li key={index}>{feature}</li>
-                    ))}
-                  </ul>
-                </div>
-
-                <div className={styles.stackContainer}>
-                  {project.stack.map((tech, index) => (
-                    <span key={index} className={styles.techBadge}>
-                      {tech}
-                    </span>
-                  ))}
-                </div>
-
-                <div className={styles.linksContainer}>
-                  <a
-                    href={project.liveLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className={styles.btnLive}
-                  >
-                    Live Demo
-                  </a>
-                  <a
-                    href={project.githubLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className={styles.btnGithub}
-                  >
-                    GitHub
-                  </a>
-                </div>
-              </div>
-            </div>
+            <ProjectCard key={project.id} project={project} />
           ))}
         </div>
       </div>

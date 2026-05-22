@@ -115,6 +115,7 @@
   align-items: center;
   padding: 0.75rem 1rem;
   background: var(--bg-secondary, #f9f9f9);
+  border: 1px solid var(--border-color, #f5f5f5);
   border-radius: 8px;
   transition:
     transform 0.2s ease,
@@ -124,7 +125,7 @@
 
 .langItem:hover {
   transform: translateX(5px);
-  border-color: rgba(0, 112, 243, 0.3);
+  border-color: var(--accent-color);
   background: var(--bg-card, #ffffff);
 }
 
@@ -136,7 +137,7 @@
 .langLevel {
   font-size: 0.9rem;
   color: var(--accent-color);
-  background: rgba(123, 0, 160, 0.08);
+  background: rgba(0, 112, 243, 0.08);
   padding: 0.2rem 0.6rem;
   border-radius: 12px;
   font-weight: 500;
@@ -162,6 +163,7 @@
   gap: 1rem;
   padding: 0.75rem;
   background: var(--bg-secondary, #f9f9f9);
+  border: 1px solid var(--border-color, #f5f5f5);
   border-radius: 8px;
   font-weight: 500;
   color: var(--text-primary, #333);
