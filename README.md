@@ -1,16 +1,28 @@
-# React + Vite
+# 🚀 Frontend Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is my personal portfolio website, built to showcase my technical skills, creative projects, and professional journey. It features a modern, responsive design with full dark/light mode support and a smooth user experience.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🛠 Tech Stack
 
-## React Compiler
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+**React.js** | Core framework (Hooks, Context API) |
 
-## Expanding the ESLint configuration
+**Vite** 
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+**CSS Modules** | Scoped and maintainable styling |
+
+**Vercel** 
+
+---
+
+## ✨ Key Features
+
+* **Dynamic Theme Switcher:** Light and Dark modes.
+* **Responsive UI:** Fully optimized for mobile, tablet, and desktop screens.
+* **Interactive Showcases:** Project cards with live demos and source code.
+
+---
+
+[View Live](https://my-portfolio-ana-solo.vercel.app/)
