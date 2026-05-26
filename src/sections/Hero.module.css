@@ -57,4 +57,10 @@
   text-decoration: none;
   border-radius: 5px;
   font-weight: bold;
+  transition: all 0.2s ease;
+}
+
+.button:hover {
+  scale: 1.05;
+  background-color: var(--accent-color);
 }

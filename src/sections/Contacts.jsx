@@ -1,7 +1,7 @@
 import styles from "./Contacts.module.css";
-
-import { FaGithub, FaLinkedin, FaRegFilePdf } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaRegFilePdf, FaReact } from "react-icons/fa";
 import { MdOutlineEmail } from "react-icons/md";
+import resumeFile from "../assets/resume.pdf";
 
 export default function Contact() {
   const currentYear = new Date().getFullYear();
@@ -44,14 +44,22 @@ export default function Contact() {
         </div>
 
         <div className={styles.resumeBlock}>
-          <a href="/resume.pdf" download className={styles.resumeButton}>
+          <a
+            href={resumeFile}
+            download="Anastasia_CV.pdf"
+            className={styles.resumeButton}
+          >
             <FaRegFilePdf /> Download CV
           </a>
         </div>
 
         <hr className={styles.divider} />
         <div className={styles.copyright}>
-          <p>© {currentYear} Built with React & lots of coffee ☕</p>
+          <p>
+            © {currentYear} Built with
+            <FaReact className={styles.reactIcon} />
+            React
+          </p>
         </div>
       </div>
     </footer>

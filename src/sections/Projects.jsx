@@ -30,8 +30,8 @@ const PROJECTS = [
     description:
       "Galactica is a web application for a fictional space tourism agency that allows users to explore planets, manage a wishlist of dream destinations, and get to know the crew of space explorers.",
     features: [
-      "Next.js's native file-system-based routing (App Router)",
-      "CSS Modules (for component-scoped styling)",
+      "Next.js's native file-system-based routing (App Router).",
+      "CSS Modules (for component-scoped styling).",
       "Users can seamlessly add planets to their wishlist, remove them, add custom planets via forms, and track the real-time dynamic countdown of selected destinations.",
       "A dedicated dashboard layout prepared for tracking outer-space data and rover photograph elements fetched from NASA API.",
     ],
@@ -46,10 +46,10 @@ const PROJECTS = [
     description:
       "A simple Expense Tracker that lets you log daily spendings, categorize expenses, view monthly total, and track your budget in real time.",
     features: [
-      "Categorize spendings (Housing, Food, Transport, Entertainment, etc.)",
+      "Categorize spendings (Housing, Food, Transport, Entertainment, etc.).",
       "View total expenses and income for the current month, expenses broken down by category with a visual bar chart.",
-      "LocalStorage to save the data (income and expenses)",
-      "Archive page with monthly expense summaries",
+      "LocalStorage to save the data (income and expenses).",
+      "Archive page with monthly expense summaries.",
     ],
     stack: ["HTML", "CSS", "Vanilla JavaScript", "LocalStorage"],
     image: expenseTrackerImg, // И ТУТ
@@ -62,9 +62,9 @@ const PROJECTS = [
     description:
       "A classic Memory Card Game built with JavaScript, featuring a backend and database for dynamic card data, responsive design, and multiple difficulty levels.",
     features: [
-      "Fullstack Application",
+      "Fullstack Application.",
       "Fully mobile-friendly layout.",
-      "Three Difficulty Levels",
+      "Three Difficulty Levels.",
       "Timer tracks your speed.",
     ],
     stack: ["HTML", "CSS", "JavaScript", "Node.js", "Express", "SQLite"],

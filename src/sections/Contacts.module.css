@@ -91,6 +91,36 @@
 }
 
 .copyright {
-  font-size: 0.85rem;
-  color: var(--text-secondary, #888);
+  margin-top: 2rem;
+  text-align: center;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.copyright p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.reactIcon {
+  color: #61dafb;
+  font-size: 1.2rem;
+
+  animation: rotateReact 10s linear infinite;
+}
+
+@keyframes rotateReact {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.reactIcon:hover {
+  color: #0070f3;
+  transition: color 0.3s ease;
 }

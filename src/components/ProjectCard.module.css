@@ -136,7 +136,7 @@
 }
 
 .btnLive:hover {
-  background-color: var(--accent-color);
+  scale: 1.05;
 }
 
 .btnGithub {
@@ -148,4 +148,5 @@
 .btnGithub:hover {
   background-color: var(--bg-secondary, #f5f5f5);
   border-color: var(--text-primary, #333);
+  scale: 1.05;
 }
