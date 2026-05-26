@@ -94,3 +94,45 @@
     display: none;
   }
 }
+
+.menuButton {
+  display: none; /* Скрыта на десктопе */
+  background: none;
+  border: none;
+  color: var(--text-primary);
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 2000;
+  transition: color 0.3s;
+}
+
+@media (max-width: 768px) {
+  .menuButton {
+    display: block;
+  }
+
+  .navLinks {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 70%;
+    height: 100vh;
+    background-color: var(--bg-primary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    transition: right 0.4s cubic-bezier(0.77, 0, 0.175, 1);
+    box-shadow: -10px 0 30px rgba(0, 0, 0, 0.1);
+    z-index: 1500;
+  }
+
+  .navLinks.navActive {
+    right: 0;
+  }
+
+  .link {
+    font-size: 1.5rem;
+  }
+}
