@@ -1,4 +1,6 @@
 import styles from "./Skills.module.css";
+import useSound from "use-sound";
+import hoverSoundFile from "../assets/sounds/hover.wav";
 
 import {
   FaReact,
@@ -60,6 +62,11 @@ const HOBBIES = [
 ];
 
 export default function Skills() {
+  const [playHover] = useSound(hoverSoundFile, {
+    volume: 0.1,
+    interrupt: true,
+  });
+
   return (
     <section className={styles.skillsSection} id="skills">
       <div className={styles.container}>
@@ -72,7 +79,11 @@ export default function Skills() {
           <h3 className={styles.groupTitle}>Tech Stack</h3>
           <div className={styles.skillsGrid}>
             {TECH_STACK.map((skill, index) => (
-              <div key={index} className={styles.skillItem}>
+              <div
+                key={index}
+                className={styles.skillItem}
+                onMouseEnter={playHover}
+              >
                 <div className={styles.iconWrapper}>{skill.icon}</div>
                 <span className={styles.skillName}>{skill.name}</span>
               </div>
@@ -85,7 +96,11 @@ export default function Skills() {
             <h3 className={styles.groupTitle}>Languages</h3>
             <div className={styles.languagesList}>
               {LANGUAGES.map((lang, idx) => (
-                <div key={idx} className={styles.langItem}>
+                <div
+                  key={idx}
+                  className={styles.langItem}
+                  onMouseEnter={playHover}
+                >
                   <span className={styles.langName}>{lang.name}</span>
                   <span className={styles.langLevel}>{lang.level}</span>
                 </div>
@@ -97,7 +112,11 @@ export default function Skills() {
             <h3 className={styles.groupTitle}>Beyond Coding</h3>
             <div className={styles.hobbiesGrid}>
               {HOBBIES.map((hobby, idx) => (
-                <div key={idx} className={styles.hobbyItem}>
+                <div
+                  key={idx}
+                  className={styles.hobbyItem}
+                  onMouseEnter={playHover}
+                >
                   <div className={styles.hobbyIcon}>{hobby.icon}</div>
                   <span>{hobby.name}</span>
                 </div>
