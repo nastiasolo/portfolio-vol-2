@@ -1,14 +1,21 @@
 import styles from "./ProjectCard.module.css";
 
-export default function ProjectCard({ project }) {
+export default function ProjectCard({ project, isFeatured }) {
   return (
-    <div className={styles.projectCard}>
+    <div
+      className={`${styles.projectCard} ${isFeatured ? styles.featuredCard : ""}`}
+    >
       <div className={styles.imageWrapper}>
-        <img
-          src={project.image}
-          alt={`${project.title} preview`}
-          className={styles.projectImage}
-        />
+        <picture>
+          {isFeatured && project.imageMobile && (
+            <source media="(max-width: 899px)" srcSet={project.imageMobile} />
+          )}
+          <img
+            src={project.image}
+            alt={project.title}
+            className={styles.projectImage}
+          />
+        </picture>
         <div className={styles.imageOverlay}>
           <span>Click for details coming soon</span>
         </div>

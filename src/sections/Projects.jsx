@@ -5,6 +5,34 @@ import eventAppImg from "../assets/images/event-app.png";
 import spaceGalacticaImg from "../assets/images/space-galactica.png";
 import expenseTrackerImg from "../assets/images/expense-tracker.png";
 import memoryGameImg from "../assets/images/memory-game.png";
+import readiculousImg from "../assets/images/readiculous.png";
+import readiculousDesktopImg from "../assets/images/readiculous-desktop.png";
+
+const FEATURED_PROJECT = {
+  id: 0,
+  title: "Readiculous",
+  description:
+    "A responsive and user-friendly React web application designed to guilt-trip you into finishing your reading list, cataloging books, visualizing stats, and earning badges.",
+  features: [
+    "Profile Gamification: Profile customization modal allowing users to pick from a preset of cute animal avatars and set favourite genres.",
+    "Book Cataloging: Search and discover actual books dynamically via the OpenLibrary API.",
+    "Challenges: Challenges page to see your trophy cabinet. Turn those locked, gray achievements into shiny, colorized badges!",
+    "Fully Responsive UI: Fully adaptive layout that shifts into an app-like experience on smartphones.",
+  ],
+  stack: [
+    "React",
+    "JavaScript",
+    "Pure CSS",
+    "JSON Server",
+    "React Router",
+    "Context API",
+    "Open Library API",
+  ],
+  image: readiculousImg,
+  imageMobile: readiculousDesktopImg,
+  liveLink: "https://readiculous-app.vercel.app/",
+  githubLink: "https://github.com/nastiasolo/readiculous",
+};
 
 const PROJECTS = [
   {
@@ -80,6 +108,11 @@ export default function Projects() {
       <div className={styles.container}>
         <h2 className={styles.sectionTitle}>Projects</h2>
         <p className={styles.sectionSubtitle}>A showcase of things I built</p>
+
+        <div className={styles.featuredWrapper}>
+          <span className={styles.featuredBadge}>Featured Project</span>
+          <ProjectCard project={FEATURED_PROJECT} isFeatured={true} />
+        </div>
 
         <div className={styles.projectsGrid}>
           {PROJECTS.map((project) => (
