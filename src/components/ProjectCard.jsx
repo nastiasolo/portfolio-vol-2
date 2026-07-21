@@ -53,14 +53,16 @@ export default function ProjectCard({ project, isFeatured }) {
               Live Demo
             </a>
           )}
-          <a
-            href={project.githubLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.btnGithub}
-          >
-            GitHub
-          </a>
+          {project.githubLink && project.githubLink !== "#" && (
+            <a
+              href={project.githubLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.btnGithub}
+            >
+              GitHub
+            </a>
+          )}
         </div>
       </div>
     </div>

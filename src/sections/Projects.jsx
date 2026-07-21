@@ -7,6 +7,7 @@ import expenseTrackerImg from "../assets/images/expense-tracker.png";
 import memoryGameImg from "../assets/images/memory-game.png";
 import readiculousImg from "../assets/images/readiculous.png";
 import readiculousDesktopImg from "../assets/images/readiculous-desktop.png";
+import constructionImg from "../assets/images/construction.png";
 
 const FEATURED_PROJECT = {
   id: 0,
@@ -48,7 +49,7 @@ const PROJECTS = [
       "Authenticated users can view their past orders with real-time checkout simulation.",
     ],
     stack: ["React", "JavaScript", "Vite", "React Router DOM", "Context API"],
-    image: eventAppImg, // ПЕРЕДАЕМ ПЕРЕМЕННУЮ ТУТ
+    image: eventAppImg,
     liveLink: "https://event-app-startup-hyf.vercel.app/",
     githubLink: "https://github.com/nastiasolo/event-app-startup-hyf",
   },
@@ -64,26 +65,26 @@ const PROJECTS = [
       "A dedicated dashboard layout prepared for tracking outer-space data and rover photograph elements fetched from NASA API.",
     ],
     stack: ["Next.js", "JavaScript", "React", "CSS Modules", "Vercel"],
-    image: spaceGalacticaImg, // И ТУТ
+    image: spaceGalacticaImg,
     liveLink: "https://space-galactica-nextjs.vercel.app/",
     githubLink: "https://github.com/nastiasolo/space-galactica-nextjs",
   },
-  {
-    id: 3,
-    title: "Expense Tracker",
-    description:
-      "A simple Expense Tracker that lets you log daily spendings, categorize expenses, view monthly total, and track your budget in real time.",
-    features: [
-      "Categorize spendings (Housing, Food, Transport, Entertainment, etc.).",
-      "View total expenses and income for the current month, expenses broken down by category with a visual bar chart.",
-      "LocalStorage to save the data (income and expenses).",
-      "Archive page with monthly expense summaries.",
-    ],
-    stack: ["HTML", "CSS", "Vanilla JavaScript", "LocalStorage"],
-    image: expenseTrackerImg, // И ТУТ
-    liveLink: "https://nastiasolo.github.io/expense-tracker/",
-    githubLink: "https://github.com/nastiasolo/expense-tracker",
-  },
+  // {
+  //   id: 3,
+  //   title: "Expense Tracker",
+  //   description:
+  //     "A simple Expense Tracker that lets you log daily spendings, categorize expenses, view monthly total, and track your budget in real time.",
+  //   features: [
+  //     "Categorize spendings (Housing, Food, Transport, Entertainment, etc.).",
+  //     "View total expenses and income for the current month, expenses broken down by category with a visual bar chart.",
+  //     "LocalStorage to save the data (income and expenses).",
+  //     "Archive page with monthly expense summaries.",
+  //   ],
+  //   stack: ["HTML", "CSS", "Vanilla JavaScript", "LocalStorage"],
+  //   image: expenseTrackerImg,
+  //   liveLink: "https://nastiasolo.github.io/expense-tracker/",
+  //   githubLink: "https://github.com/nastiasolo/expense-tracker",
+  // },
   {
     id: 4,
     title: "Memory Game",
@@ -96,9 +97,25 @@ const PROJECTS = [
       "Timer tracks your speed.",
     ],
     stack: ["HTML", "CSS", "JavaScript", "Node.js", "Express", "SQLite"],
-    image: memoryGameImg, // И ТУТ
-    liveLink: "#", // Добавил заглушку, раз у этого проекта нет liveLink в твоем коде
+    image: memoryGameImg,
+    liveLink: null,
     githubLink: "https://github.com/nastiasolo/memory-game-fullstack",
+  },
+  {
+    id: 5,
+    title: "Landing page",
+    description:
+      "A responsive landing page for a construction company, initially built from scratch and later enhanced using AI-assisted development tools to optimize structure, styling, and performance.",
+    features: [
+      "semantic HTML5 and clean CSS.",
+      "Fully mobile-friendly layout.",
+      "AI-Optimized Workflow.",
+      "Deployed and hosted on Netlify.",
+    ],
+    stack: ["HTML", "CSS", "JavaScript", "AI Tooling", "Netlify"],
+    image: constructionImg,
+    liveLink: "https://2mtbyg.dk/",
+    githubLink: null,
   },
 ];
 
