@@ -201,6 +201,9 @@
 .skillItem:hover .iconCss {
   color: #264de4;
 }
+.skillItem:hover .iconSass {
+  color: #cc6699;
+}
 .skillItem:hover .iconJs {
   color: #f7df1e;
 }
@@ -227,6 +230,9 @@
 }
 .skillItem:hover .iconGit {
   color: #f05032;
+}
+.skillItem:hover .iconAi {
+  color: #a855f7;
 }
 
 .hobbyItem:hover .iconYoga {

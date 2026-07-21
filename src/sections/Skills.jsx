@@ -8,6 +8,7 @@ import {
   FaGitAlt,
   FaHtml5,
   FaCss3Alt,
+  FaSass,
 } from "react-icons/fa";
 import { DiJavascript1, DiPostgresql } from "react-icons/di";
 import { SiNextdotjs, SiTypescript } from "react-icons/si";
@@ -18,11 +19,12 @@ import { FaDiceD20 } from "react-icons/fa";
 
 import { GrYoga } from "react-icons/gr";
 import { ImCompass } from "react-icons/im";
-import { BsPuzzle } from "react-icons/bs";
+import { BsPuzzle, BsStars } from "react-icons/bs";
 
 const TECH_STACK = [
   { name: "HTML5", icon: <FaHtml5 className={styles.iconHtml} /> },
   { name: "CSS3", icon: <FaCss3Alt className={styles.iconCss} /> },
+  { name: "Sass / SCSS", icon: <FaSass className={styles.iconSass} /> },
   { name: "JavaScript", icon: <DiJavascript1 className={styles.iconJs} /> },
   { name: "TypeScript", icon: <SiTypescript className={styles.iconTs} /> },
   { name: "React", icon: <FaReact className={styles.iconReact} /> },
@@ -35,6 +37,7 @@ const TECH_STACK = [
   { name: "REST API", icon: <TbApi className={styles.iconApi} /> },
   { name: "Vite", icon: <AiOutlineThunderbolt className={styles.iconVite} /> },
   { name: "Git", icon: <FaGitAlt className={styles.iconGit} /> },
+  { name: "AI Tools", icon: <BsStars className={styles.iconAi} /> },
 ];
 
 const LANGUAGES = [
